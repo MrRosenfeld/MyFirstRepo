@@ -10,3 +10,4 @@ elif animal == "parrot":
 else:
     print(animal + " sounds cool.")
 
+print("What's your favorite subject?")
