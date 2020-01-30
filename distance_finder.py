@@ -35,20 +35,20 @@ global y1
 global y2
 
 while True:
-    if kb.is_pressed('q'):
+    if kb.is_pressed('shift'):
         print('Point 1')
         x1,y1 = pg.position()
         print("x1: " + str(x1))
         print("y1: " + str(y1))
         time.sleep(0.3)
-    elif kb.is_pressed('w'):
+    elif kb.is_pressed('ctrl'):
         print('Point 2')
         x2,y2 = pg.position()
         print("x2: " + str(x2))
         print("y2: " + str(y2))
         time.sleep(0.3)
     
-    elif kb.is_pressed('e'):
+    elif kb.is_pressed('space'):
         #this is the equation to find the distance between two coordinates
         distance = math.sqrt((x2-x1)**2+(y2-y1)**2)
         print("Distance: " + str(distance) + "px")
